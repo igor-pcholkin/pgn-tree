@@ -6,7 +6,7 @@ import java.util.Scanner
 object PgnApp extends App {
 
   def readPgnFiles = {
-    val baseDir = "/Volumes/Новый/Users/igor/Documents/chessdata/"
+    val baseDir = "./"
     val pgnFiles = Seq("53ZURICH")
     val games = pgnFiles.foldLeft(Seq[Game]()) { (allGames, fileName) =>
       println(s"Reading $fileName")
